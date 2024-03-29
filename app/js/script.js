@@ -305,8 +305,7 @@ const chooseWord = () => {
 		// choose random item from words array
 		
 		let randomIndex = Math.floor(Math.random() * (database.length - 1)) + 1;
-		//solutionWord = database[randomIndex];
-		solutionWord = 'score';
+		solutionWord = database[randomIndex];
 		console.log('randomWord: ' + solutionWord);
 
 
