@@ -1,0 +1,84 @@
+@use '../util' as *;
+
+:root{
+	--absent: var(--absent-dark);
+	--green: var(--green-dark);
+	--yellow: var(--yellow-dark);
+	--body-background-color: var(--black);
+	--body-color: var(--white);
+	--guess-tile-border-color: var(--gray-1);
+	--guess-tile-has-letter: var(--gray-2);
+	--letter-color: var(--white);
+	--button-color: var(--white);
+	--dialog-color: var(--black-1);
+	--modal-header-color: var(--modal-header-dark);
+	--give-up-container-justify-content: var(--center);
+	--give-up-container-width: var(--110);
+	--green-hover: var(--green-hover-dark);
+	--green-hover-text: var(--green-hover-light);
+	--red-hover: var(--red-hover-dark);
+	--red-hover-text: var(--red-hover-light);
+	--gray-hover: var(--gray-hover-dark);
+}
+
+:root {
+	//dark theme colors
+	--black : #121213;
+	--black-1 : #262626;
+	--gray-1: #61616c;
+	--gray-2: #afafaf;
+	--absent-dark:#3a3a3c;
+
+	//light theme colors
+	--white: #ffffff; 
+	--gray-3: #d3d6da;
+	--gray-4: #787c7e;
+	--absent-light:  #787c7e;
+
+	--yellow-dark: #b59f3b;
+	--green-dark: #538d4e;
+
+	--yellow-light: #f3c237;
+	--green-light: #79b851;
+
+	--red-hover-dark:#711515;
+	--red-hover-light:#e37b7b;
+
+	--green-hover-dark: #33752e;
+	--green-hover-light: #b9f594;
+
+	--modal-header-dark: #545454;
+	--modal-header-light: #b3b3b3;
+
+	--gray-hover-dark: #434345;
+	--gray-hover-light: #adadad;
+
+	--center: center;
+	--left: left;
+	--110:110px;
+	--120:120px;
+  }
+
+html {
+	font-size: 100%;
+	font-family: var(--font-body);
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 1rem;
+	background-color: var(--body-background-color);
+	color: var(--body-color);
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+}
