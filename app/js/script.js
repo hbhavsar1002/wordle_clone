@@ -314,7 +314,7 @@ const chooseWord = () => {
 
 		const wordMeanings = document.querySelectorAll(".word-meaning");
 		
-		console.log(`${url}${solutionWord}`);
+		//console.log(`${url}${solutionWord}`);
 
 			//fetch the meaning of the word
 		fetch(`${url}${solutionWord}`)
@@ -326,8 +326,8 @@ const chooseWord = () => {
 		})
 		.then((data) => {
 			let definition = data[0].meanings[0].definitions[0].definition;
-			console.log(data);
-			console.log("def",definition);
+			//console.log(data);
+			//console.log("def",definition);
 			wordMeanings.forEach(wordMeaning => {
 				wordMeaning.innerHTML = definition;
 			});
