@@ -286,10 +286,10 @@ const loadValidWords = () => {
     .then((response) => response.json())
     .then(({ words }) => {
       globalWords = words; 
-	  console.log(globalWords.length);
+	  //console.log(globalWords.length);
     })
     .catch(() => {
-      console.error('Failed to load words');
+      //console.error('Failed to load words');
       return []; 
     });
   };
@@ -306,7 +306,7 @@ const chooseWord = () => {
 		
 		let randomIndex = Math.floor(Math.random() * (database.length - 1)) + 1;
 		solutionWord = database[randomIndex];
-		console.log('randomWord: ' + solutionWord);
+		//console.log('randomWord: ' + solutionWord);
 
 
 		const spanWord = document.querySelector(".solution-word");
@@ -401,7 +401,7 @@ const checkValidity = () => {
                 return response.json();
             })
             .then((data) => {
-                console.log(data);
+                //console.log(data);
                 resolve(true); // Resolve with true if word is found
             })
             .catch((error) => {
